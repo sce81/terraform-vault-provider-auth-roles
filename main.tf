@@ -15,6 +15,7 @@ resource "vault_jwt_auth_backend_role" "tfc_role" {
 
 resource "vault_policy" "tfc_policy" {
   name = var.role_name
+  
   policy = var.vault_policy
 }
 
